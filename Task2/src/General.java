@@ -9,9 +9,8 @@ public class General {
         return (int)(min+(Math.random()*(max-min)));
     }
 
-    public static char returnRandom(char ch){
-        Random random = new Random();
-        return (char) ('a' + random.nextInt(26));
+    public static char returnRandom(){
+        return (char)('a'+(Math.random()*('z'-'a')));
     }
 
     public static int numReverse(int number){
