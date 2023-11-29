@@ -9,7 +9,7 @@ public class General {
         return (int)(min+(Math.random()*(max-min)));
     }
 
-    public static int returnRandom(char ch){
+    public static char returnRandom(char ch){
         Random random = new Random();
         return (char) ('a' + random.nextInt(26));
     }
