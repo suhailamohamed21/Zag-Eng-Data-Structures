@@ -82,13 +82,7 @@ public class LinkedList {
         return index != -1;
     }
     public int getSize() {                     //O(n)
-        Node current = head;
-        int index = 0;
-        while (current != null) {
-            index++;
-            current = current.nextNode;
-        }
-        return index;
+        return size;
     }
     public void printElements(){               //O(n)
         if(isEmpty()){
@@ -118,7 +112,7 @@ public class LinkedList {
                 max.value = current.value;
             current = current.nextNode;
         }
-        System.out.println("Max value is: "+ max.value);
+        return max.value;
     }
     public void min(){                         //O(n)
         if(isEmpty()){
@@ -132,7 +126,7 @@ public class LinkedList {
                 min.value = current.value;
             current = current.nextNode;
         }
-        System.out.println("Min value is: "+ min.value);
+        return min.value;
     }
     public Node getBeforeLast(){
             Node current = head;
